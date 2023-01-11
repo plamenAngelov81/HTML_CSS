@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    <title>HTML CSS Homework</title>
+</head>
+
+<body>
+<main id="wrapper">
+    <h1>HTML CSS Introduction Homework</h1>
+    <div>
+        <p><a href="{% url 'welcome' %}">Welcome</a></p>
+        <p><a href="{% url 'fruits' %}">Fruits</a></p>
+        <p><a href="{% url 'wiki' %}">Wiki Page</a></p>
+        <p><a href="{% url 'to do' %}">To Do List</a></p>
+        <p><a href="{% url 'html list' %}">HTML List</a></p>
+    </div>
+    <div>
+        <p class="right"><a href="{% url 'definition lists' %}">Definition Lists</a></p>
+        <p class="right"><a href="{% url 'reversed' %}">Reversed List</a></p>
+        <p class="right"><a href="{% url 'modern' %}">Modern JS</a></p>
+        <p class="right"><a href="{% url 'book story' %}">Book Story</a></p>
+        <p class="right"><a href="{% url 'news' %}">Word Cup News</a></p>
+    </div>
+</main>
+</body>
+</html>
