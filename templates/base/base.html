@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>HTML CSS</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+</head>
+<body>
+<div class="navbar">
+  <a class="home" href="{% url 'home page' %}">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Topic
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'home page introduction' %}">HTML CSS Intro</a>
+      <a href="{% url 'structure home' %}">HTML Structure</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+{% block page_content %}
+{% endblock %}
+</body>
+</html>

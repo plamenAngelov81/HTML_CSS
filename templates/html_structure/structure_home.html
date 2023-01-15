@@ -1,0 +1,41 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <link rel="stylesheet" href="{% static 'css/html_structure.css' %}">
+    <div class="structure">
+        <div class="position">
+            <h1>HTML Structure Homework</h1>
+            <section class="left">
+                <p><a class="structure-home" href="{% url 'nav bar' %}">Navigation Bar</a></p>
+                <p><a class="structure-home" href="{% url 'page content' %}">Page Content</a></p>
+                <p><a class="structure-home" href="{% url 'semantic' %}">Semantic Tags</a></p>
+            </section>
+            <section class="right">
+                <p><a class="structure-home" href="{% url 'semantic article page' %}">Semantic Article Page</a></p>
+                <p><a class="structure-home" href="{% url 'simple website' %}">Simple WebSite</a></p>
+                <p><a class="structure-home" href="{% url 'semantic blog' %}">Semantic Blog Layout</a></p>
+            </section>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+{#<section class="position">#}
+{#    <p>HTML Structure</p>#}
+{#    <section class="links">#}
+{#        <ul>#}
+{#            <li><a href="{% url 'nav bar' %}">Navigation Bar</a></li>#}
+{#            <li><a href="{% url 'page content' %}">Page Content</a></li>#}
+{#            <li><a href="{% url 'semantic' %}">Semantic Tags</a></li>#}
+{#        </ul>#}
+{#    </section>#}
+{#    <section class="links">#}
+{#        <ul>#}
+{#            <li><a href="{% url 'semantic article page' %}">Semantic Article Page</a></li>#}
+{#            <li><a href="{% url 'simple website' %}">Simple WebSite</a></li>#}
+{#            <li><a href="{% url 'semantic blog' %}">Semantic Blog Layout</a></li>#}
+{#        </ul>#}
+{#    </section>#}
+{#</section>#}

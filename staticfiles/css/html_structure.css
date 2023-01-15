@@ -1,0 +1,52 @@
+.structure {
+    background-image: url("../images/html_home.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 896px;
+}
+
+.position {
+    height: 30%;
+    width: 28%;
+    /*color: #f5f6f6;*/
+    border: 2px solid #0c0c0c;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+section {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    background-color: #14aede;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+p:hover {
+    background-color: #831e1e;
+
+}
+
+.left {
+    margin-left: 25px;
+    margin-right: 55px;
+}
