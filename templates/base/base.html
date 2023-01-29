@@ -9,18 +9,19 @@
 </head>
 <body>
 <div class="navbar">
-  <a class="home" href="{% url 'home page' %}">Home</a>
+    <a class="home" href="{% url 'home page' %}">Home</a>
 
-  <div class="dropdown">
-    <button class="dropbtn">Topic
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="{% url 'home page introduction' %}">HTML CSS Intro</a>
-      <a href="{% url 'structure home' %}">HTML Structure</a>
-      <a href="#">Link 3</a>
+    <div class="dropdown">
+        <button class="dropbtn">Topic
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="{% url 'home page introduction' %}">HTML CSS Intro</a>
+            <a href="{% url 'structure home' %}">HTML Structure</a>
+            <a href="#">CSS & Typography</a>
+            <a href="{% url 'box model home' %}">CSS Box Model</a>
+        </div>
     </div>
-  </div>
 </div>
 {% block page_content %}
 {% endblock %}

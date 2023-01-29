@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <link rel="stylesheet" href="{% static 'css/css_box_model_style/css_box_model_home.css' %}">
+    <div class="box">
+        <div class="box__position">
+            <h1>CSS Box Model</h1>
+
+            <section class="left">
+                <p><a class="structure-home" href="{% url 'box model container' %}">Block Model Container</a></p>
+                <p><a class="structure-home" href="{% url 'scrolling article' %}">Scrolling Article</a></p>
+                <p><a class="structure-home" href="{% url 'brazil coffee' %}">Brazil Coffee</a></p>
+                <p><a class="structure-home" href="{% url 'article' %}">Article</a></p>
+            </section>
+
+            <section class="right">
+                <p><a class="structure-home" href="{% url 'blog article' %}">Block Article</a></p>
+                <p><a class="structure-home" href="{% url 'navigation inline block' %}">Navigation Inline Block</a></p>
+                <p><a class="structure-home" href="{% url 'website' %}">Make Your Own Website</a></p>
+                <p><a class="structure-home" href="{% url 'photo gallery' %}">Photo Gallery Inline Block</a></p>
+            </section>
+
+            <div class="single">
+                <p><a class="single" href="{% url 'blog layout' %}">Blog Layout Inline Block</a></p>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
