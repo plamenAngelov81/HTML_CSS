@@ -8,4 +8,5 @@ urlpatterns = [
     path('', include('HTML_CSS.html_structure.urls')),
     path('', include('HTML_CSS.css_typography.urls')),
     path('', include('HTML_CSS.css_box_model.urls')),
+    path('', include('HTML_CSS.examp_tasks.urls')),
 ]
