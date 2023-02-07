@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/exams/task_1/login.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <img class="background_img" src="{% static 'images/exams/login_image.jpg' %}" alt="login_img">
+        <section class="content">
+            <h1>ACCOUNT LOGIN</h1>
+            <div class="content_form">
+                <form action="#" method="post">
+                    <label></label>
+                    <i class="fa-regular fa-user"></i> <input type="text" placeholder="Username">
+                    <hr>
+                    <label></label>
+                    <i class="fas fa-lock"></i><input type="text" placeholder="Password">
+                    <hr>
+                    <div class="btn">
+                        <button>LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

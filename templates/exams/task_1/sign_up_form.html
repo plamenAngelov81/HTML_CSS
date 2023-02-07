@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/exams/task_1/sing_up_form.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <title>Sign Up</title>
+</head>
+<body>
+<main>
+    <section class="softuni">
+
+        <img class="cover" src="{% static "images/exams/cover.jpg" %}" alt="cover">
+        <div class="content">
+            <p class="softuni__left">SoftUni</p>
+            <h2>Welcome to SoftUni.</h2>
+            <h3>Are you ready to become a dev?</h3>
+            <p class="icon">
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </p>
+        </div>
+    </section>
+    <section class="singup">
+        <article class="inside">
+            <form action="#" method="post">
+
+                <div class="form__props">
+                    <label for="username">USERNAME</label>
+                    <input type="text" id="username" placeholder="antoniyaat"/>
+                </div>
+
+                <div class="form__props">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email" placeholder="a.atanasova@softuni.bg"/>
+                </div>
+
+                <div class="form__props">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" placeholder="********"/>
+                </div>
+
+                <div class="form__props">
+                    <label for="rep-password">REPEAT PASWORD</label>
+                    <input type="password" id="rep-password" placeholder="********"/>
+                </div>
+
+                <button class="btn">REGISTER</button>
+                <p class="ninja"><a href="#">I am already a ninja</a></p>
+            </form>
+        </article>
+    </section>
+</main>
+</body>
+</html>

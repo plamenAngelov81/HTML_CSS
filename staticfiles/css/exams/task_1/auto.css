@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+main{
+    position: absolute;
+    width: 1660px;
+    left: 100px;
+}
+
+.info, .car {
+    display: inline-block;
+}
+
+.info {
+    width: 900px;
+    height: 630px;
+    background-color: white;
+
+}
+
+.content {
+    margin: 10px 150px;
+}
+
+.content .content_head {
+    width: 650px;
+}
+
+.content .content_head h2 {
+    margin-top: 50px;
+    margin-bottom: 14px;
+    letter-spacing: 1.5px;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.icon_first {
+    margin: 20px 0;
+}
+
+.icon_first .img, .icon_description {
+    display: inline-block;
+}
+
+.img {
+    width: 60px;
+    height: 50px;
+}
+
+.icon_first .icon_description p {
+    color: #a09c9c;
+    font-size: 14px;
+}
+
+.car {
+    width: 700px;
+    height: 630px;
+
+}
+
+.car_content {
+    width: 600px;
+    height: 480px;
+    margin-top: 140px;
+}
+
+.car_img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}

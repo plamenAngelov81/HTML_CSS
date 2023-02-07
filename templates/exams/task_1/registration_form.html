@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/exams/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/exams/task_1/registration_form.css' %}">
+    <title>Task 1</title>
+</head>
+<body>
+    <main>
+        <img src="{% static 'images/exams/background.png' %}" alt="some_plant">
+        <section class="register">
+            <div class="register__img">
+                <img src="{% static 'images/exams/form-background.png' %}" alt="clock">
+            </div>
+            <article class="form">
+                <h1>REGISTRATION FORM</h1>
+                <form method="post" action="#">
+
+                    <div class="form__first_last">
+
+                        <div class="first">
+                            <div class="first__label">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <input type="text" id="fname" name="fname">
+                        </div>
+                        <div class="last">
+                            <div class="last__label">
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <input type="text" id="lname" name="lname">
+                        </div>
+
+                    </div>
+
+                    <div class="form__email">
+                        <div class="email__label">
+                            <label for="user-email">Email</label>
+                        </div>
+                        <input type="text" id="user-email" name="user-email">
+                    </div>
+
+                    <div class="form__pass">
+                        <div class="pass__label">
+                            <label for="pass">Password</label>
+                        </div>
+                        <input type="text" name="pass" id="pass">
+                    </div>
+
+                    <div class="form__repeat_pass">
+                        <div class="repeat__label">
+                            <label for="repeat-pass">Password Confirmation</label>
+                        </div>
+                        <input type="text" name="repeat-pass" id="repeat-pass">
+                    </div>
+
+                    <div class="form__check">
+                        <input type="checkbox"><span class="check__i">I</span> <span>accept the Terms of Use & Privacy Policy.</span>
+                    </div>
+
+                    <div class="form__btn>">
+                        <button>REGISTER NOW</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

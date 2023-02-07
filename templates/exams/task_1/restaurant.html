@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/exams/task_1/restaurant.css' %}">
+    <title>Restaurant</title>
+</head>
+<body>
+    <main>
+        <section class="image">
+            <div class="img">
+                <img class="img_restourant" src="{% static 'images/exams/form-img.jpg' %}" alt="">
+            </div>
+        </section>
+
+        <section class="form">
+            <h2>Booking place for your dinner!</h2>
+            <div class="form_content">
+                <form action="#" method="post">
+
+                    <input type="text" placeholder="Your name">
+
+                    <input type="text" placeholder="Your phone number">
+
+                    <input type="text" placeholder="Time">
+
+                    <input type="text" placeholder="Number of people">
+
+                    <div class="button">
+                        <button>Book now</button>
+                    </div>
+                </form>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body {
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+}
+
+main {
+    width: 800px ;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    box-shadow: 4px 8px 7px -4px rgba(0,0,0,0.5);
+    top: 150px;
+    left: 550px;
+}
+
+.softuni {
+    width: 400px;
+    height: 500px;
+    /*background-image: url("/staticfiles/images/exams/cover.jpg");*/
+    /*background-repeat: no-repeat;*/
+    background-color: #ebeeed;
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.softuni .content {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 30px;
+
+}
+
+.softuni p, h2,  h3 {
+    color: white;
+}
+
+.softuni .softuni__left {
+    padding: 25px 18px;
+    font-weight: 600;
+}
+
+.softuni h2 {
+    text-align: center;
+    margin-top: 120px;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+}
+
+.softuni h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.softuni .icon {
+    text-align: center;
+    margin-top: 170px;
+}
+
+i {
+    padding: 5px;
+}
+
+.singup {
+    width: 400px;
+    height: 500px;
+    border: 1px solid white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.singup .inside {
+    width: 85%;
+    height: 85%;
+    margin: 34px auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+label {
+    padding-bottom: 10px;
+    color: lightgray;
+}
+
+.btn, .ninja {
+    margin-top: 34px;
+    display: inline-block;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 8px 40px;
+    border-radius: 30px;
+}
+
+a {
+    margin-left: 10px;
+    color: #b4a9a9;
+}

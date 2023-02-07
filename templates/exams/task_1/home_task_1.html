@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <link rel="stylesheet" href="{% static 'css/exams/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/exams/task_1_home.css' %}">
+    <main>
+        <h1>First Exam Task</h1>
+        <section>
+            <ul role="list">
+                <li><a href="{% url 'registration form' %}">18 Aug 2022 - Registration Form</a></li>
+                <li><a href="{% url 'maine home' %}">26 Jun 2022 - Maine Home</a></li>
+                <li><a href="{% url 'sign up' %}">19 Apr 2022 - Sign Up Form </a></li>
+                <li><a href="{% url 'kiwi' %}">27 Feb 2022 - Kiwi Smoothie</a></li>
+                <li><a href="{% url 'financial services' %}">14 December 2021 - Financial Services</a></li>
+                <li><a href="{% url 'enterprise' %}">30 October 2021 - Enterprise</a></li>
+                <li><a href="{% url 'auto' %}">15 December 2020 - Auto</a></li>
+                <li><a href="{% url 'medium' %}">01 November 2020 - Medium</a></li>
+                <li><a href="{% url 'simple article' %}">12 August 2020 - Simple Article</a></li>
+                <li><a href="#">HTML & CSS Exam - 28 March 2020</a></li>
+                <li><a href="{% url 'login' %}">21 March 2020 - Login Task</a></li>
+                <li><a href="{% url 'restaurant' %}">17 December 2019 - Restaurant</a></li>
+                <li><a href="{% url 'earth' %}">03 November 2019 - Earth</a></li>
+                <li><a href="{% url 'advantages' %}">13 August 2019 - Advantages</a></li>
+            </ul>
+        </section>
+    </main>
+{% endblock %}
